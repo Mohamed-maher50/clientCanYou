@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,
+button,
+input {
+  font-family: "Josefin Sans";
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0e9507b3;
+  height: 100px;
+}
+::-webkit-scrollbar-track {
+  background-color: #0d1711f7;
+  width: 15px;
+}
+::-webkit-scrollbar {
+  background-color: #9d3cff;
+  width: 10px;
+}
+
+@layer components {
+  .main-btn {
+    transition: 0.3s ease-in-out;
+    @apply py-2 px-7  rounded-full
+      text-black bg-darkWhite mt-7 font-bold font-Josefin shadow-md;
+  }
+  .outline-btn {
+    transition: 0.5s ease-in-out;
+    @apply py-2 px-7 rounded-full
+    text-white bg-open mt-7 font-bold font-Josefin  border-2 border-white;
+  }
+  .outline-btn:hover {
+    @apply border-[#ffff] bg-secondary;
+  }
+  .main-btn:hover {
+    @apply text-darkWhite bg-secondary;
+  }
+  .icon-btn {
+    @apply p-3 rounded-full cursor-pointer shadow-sm;
+  }
+}

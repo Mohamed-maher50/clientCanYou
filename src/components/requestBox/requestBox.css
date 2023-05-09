@@ -1,0 +1,8 @@
+.requestBox.active {
+  height: 300px;
+}
+.requestBox {
+  height: 0px;
+  overflow: hidden;
+  padding: 0;
+}
